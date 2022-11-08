@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories(basePackages = {"com.djkim.bookmanager.repository"})
+@EntityScan("com.djkim.bookmanager.model.entity")
 public class BookManagementApplication {
 
     public static void main(String[] args) {

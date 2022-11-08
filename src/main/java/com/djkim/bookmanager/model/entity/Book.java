@@ -2,11 +2,13 @@ package com.djkim.bookmanager.model.entity;
 
 import com.djkim.bookmanager.model.dto.BookDto;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "TB_BOOK")
+@Setter
 @NoArgsConstructor
 public class Book {
     @Id
